@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :listings, excpet: [:new, :edit]
+  end 
 end
+
+
+# GET /api/listings
+# GET /api/listings/:id
+# POST /api/listings
+# PUT /api/listings/:id (update/edit)
+# DELETE /api/listings/:id
