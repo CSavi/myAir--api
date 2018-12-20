@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_15_201255) do
+ActiveRecord::Schema.define(version: 2018_12_19_133653) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2018_11_15_201255) do
     t.string "name"
     t.integer "price"
     t.string "street"
+    t.integer "count"
     t.string "city"
     t.string "state"
     t.string "postal_code"
@@ -26,8 +27,6 @@ ActiveRecord::Schema.define(version: 2018_11_15_201255) do
     t.integer "host_id"
     t.string "host"
     t.string "img_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
